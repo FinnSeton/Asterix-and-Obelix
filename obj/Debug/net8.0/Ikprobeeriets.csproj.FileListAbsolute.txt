@@ -1,0 +1,15 @@
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\bin\Debug\net8.0\Ikprobeeriets.exe
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\bin\Debug\net8.0\Ikprobeeriets.deps.json
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\bin\Debug\net8.0\Ikprobeeriets.runtimeconfig.json
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\bin\Debug\net8.0\Ikprobeeriets.dll
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\bin\Debug\net8.0\Ikprobeeriets.pdb
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\obj\Debug\net8.0\Ikprobeeriets.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\obj\Debug\net8.0\Ikprobeeriets.AssemblyInfoInputs.cache
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\obj\Debug\net8.0\Ikprobeeriets.AssemblyInfo.cs
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\obj\Debug\net8.0\Ikprobeeriets.csproj.CoreCompileInputs.cache
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\obj\Debug\net8.0\Ikprobeeriets.sourcelink.json
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\obj\Debug\net8.0\Ikprobeeriets.dll
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\obj\Debug\net8.0\refint\Ikprobeeriets.dll
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\obj\Debug\net8.0\Ikprobeeriets.pdb
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\obj\Debug\net8.0\Ikprobeeriets.genruntimeconfig.cache
+C:\Users\maddo\source\repos\FinnSeton\Asterix-and-Obelix\Ikprobeeriets\obj\Debug\net8.0\ref\Ikprobeeriets.dll

@@ -1,68 +1,89 @@
 ﻿using System;
 
-class Program
+class Pokimon
 {
-    public static void Main(string[] args)
+    // Fields for Pokimon's nickname, strength, and weakness
+    string nickname;
+    string strength;
+    string weakness;
+
+    // Constructor for Pokimon class to initialize its fields
+    public Pokimon(string nickname, string strength, string weakness)
     {
-        Pokemon pikachu = new Pokemon();
-        pikachu.Newpokimon("Pikachu", "Fire", "Water");
-        Console.WriteLine(pikachu.getName());
-        Console.WriteLine(pikachu.getType());
-        Console.WriteLine(pikachu.getWeakness());
+        this.nickname = nickname;
+        this.strength = strength;
+        this.weakness = weakness;
+    }
 
+    // Method for Pokimon to perform its battle cry
+    public void BattleCry()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            Console.WriteLine($"{nickname}! (Pokimon's battle cry)");
+        }
+    }
 
+    // Getter method for nickname
+    public string GetName()
+    {
+        return nickname;
+    }
 
+    // Setter method for nickname
+    public void SetName(string newName)
+    {
+        nickname = newName;
+    }
 
+    // Getter method for weakness
+    public string GetWeakness()
+    {
+        return weakness;
+    }
 
+    // Setter method for weakness
+    public void SetWeakness(string newWeakness)
+    {
+        weakness = newWeakness;
+    }
 
+    // Getter method for strength
+    public string GetStrength()
+    {
+        return strength;
+    }
+
+    // Setter method for strength
+    public void SetStrength(string newStrength)
+    {
+        strength = newStrength;
     }
 }
 
-class Pokemon
+class Program
 {
-    public string name;
-    public string type;
-    public string weakness;
-
-    public void Newpokimon(string name, string weakness, string type)
+    static void Main(string[] args)
     {
-        this.name = name;
-        this.type = type;
-        this.weakness = weakness;
-    }
+        // Start the game
+        bool playing = true;
+        while (playing)
+        {
+            // Ask the player to give a name to Pokimon
+            Console.WriteLine("Enter a nickname for your Pokimon:");
+            string nickname = Console.ReadLine();
 
-    public string getName()
-    { 
-        return name;
-    }
+            // Create a Pokimon object with the given nickname
+            Pokimon Pokimon = new Pokimon(nickname, "Fire", "Water");
 
-    public void setName(string name)
-    {
-        this.name = name;
-    }
+            // Pokimon does its battle cry for ten times
+            Pokimon.BattleCry();
 
-    public string getWeakness()
-    { 
-        return weakness;
+            // Ask if the player wants to continue
+            Console.WriteLine("Do you want to continue? (yes/no)");
+            string input = Console.ReadLine().ToLower();
+            if (input != "yes")
+                playing = false;
+        }
     }
-    public void setWeakness(string weakness)
-    {
-        this.weakness = weakness;
-    }
-
-    public string getType()
-    {
-        return type;
-    }
-
-    public void setType(string type)
-    {
-        this.type = type;
-    }
-
-    public String growl()
-    {
-        return "Growlllll, ik ben " + this.name;
-    }
-
 }
