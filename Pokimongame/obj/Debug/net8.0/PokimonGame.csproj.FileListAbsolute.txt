@@ -1,0 +1,15 @@
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\bin\Debug\net8.0\PokimonGame.exe
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\bin\Debug\net8.0\PokimonGame.deps.json
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\bin\Debug\net8.0\PokimonGame.runtimeconfig.json
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\bin\Debug\net8.0\PokimonGame.dll
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\bin\Debug\net8.0\PokimonGame.pdb
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\obj\Debug\net8.0\PokimonGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\obj\Debug\net8.0\PokimonGame.AssemblyInfoInputs.cache
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\obj\Debug\net8.0\PokimonGame.AssemblyInfo.cs
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\obj\Debug\net8.0\PokimonGame.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\obj\Debug\net8.0\PokimonGame.sourcelink.json
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\obj\Debug\net8.0\PokimonGame.dll
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\obj\Debug\net8.0\refint\PokimonGame.dll
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\obj\Debug\net8.0\PokimonGame.pdb
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\obj\Debug\net8.0\PokimonGame.genruntimeconfig.cache
+C:\Users\Gebruiker\OneDrive\Documenten\GitHub\Asterix-and-Obelix\Pokimongame\obj\Debug\net8.0\ref\PokimonGame.dll

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokimonGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39633549da3e00b1e6fe4287a41a2a03303a4c1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokimonGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokimonGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

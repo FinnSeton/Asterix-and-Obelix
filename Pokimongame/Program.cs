@@ -1,27 +1,26 @@
 ﻿using System;
 
-class Pokimon
+public class Pokemon
 {
-    // Fields for Pokimon's nickname, strength, and weakness
+    // Fields for Pokemon's nickname, strength, and weakness
     string nickname;
     string strength;
     string weakness;
 
-    // Constructor for Pokimon class to initialize its fields
-    public Pokimon(string nickname, string strength, string weakness)
+    // Constructor for Pokemon class to initialize its fields
+    public Pokemon(string nickname, string strength, string weakness)
     {
         this.nickname = nickname;
         this.strength = strength;
         this.weakness = weakness;
     }
 
-    // Method for Pokimon to perform its battle cry
+    // Method for Pokemon to perform its battle cry
     public void BattleCry()
     {
-        for (int i = 0; i < 10; i++)
-        {
-            Console.WriteLine($"{nickname}! (Pokimon's battle cry)");
-        }
+
+        Console.WriteLine($"{nickname}! (Pokemon's battle cry)");
+
     }
 
     // Getter method for nickname
@@ -69,15 +68,15 @@ class Program
         bool playing = true;
         while (playing)
         {
-            // Ask the player to give a name to Pokimon
-            Console.WriteLine("Enter a nickname for your Pokimon:");
+            // Ask the player to give a name to Pokemon
+            Console.WriteLine("Enter a nickname for your Pokemon:");
             string nickname = Console.ReadLine();
 
-            // Create a Pokimon object with the given nickname
-            Pokimon Pokimon = new Pokimon(nickname, "Fire", "Water");
+            // Create a Pokemon object with the given nickname
+            Pokemon pokemon = new Pokemon(nickname, "Fire", "Water");
 
-            // Pokimon does its battle cry for ten times
-            Pokimon.BattleCry();
+            // Pokemon does its battle cry for ten times
+            pokemon.BattleCry();
 
             // Ask if the player wants to continue
             Console.WriteLine("Do you want to continue? (yes/no)");
