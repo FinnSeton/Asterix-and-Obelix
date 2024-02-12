@@ -16,7 +16,7 @@ class Program
             // Create a Pokemon object with the given nickname
             Pokemon pokemon = new Pokemon("charmander", nickname, "Fire", "Water");
             // create a pokeball object with the given pokemon
-            Pokeball pokeball = new Pokeball(30, "red", pokemon);
+            Pokeball pokeball = new Pokeball(30, "red", pokemon, false);
             //trainer throws the pokeball
             pokeball.Throwpokeball();
             // Pokemon does its battle cry
@@ -25,6 +25,7 @@ class Program
             // Ask if the player wants to continue
             Console.WriteLine("Do you want to continue? (yes/no)");
             string input = Console.ReadLine().ToLower();
+            pokeball.Returnpokeball();
             if (input != "yes")
                 playing = false;
         }
