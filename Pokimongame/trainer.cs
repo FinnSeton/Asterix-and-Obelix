@@ -15,7 +15,7 @@ namespace PokemonGame
             this.belt = new List<Pokeball>();
             // Add six pokeballs with Charmander to the belt
             for (int i = 0; i < 6; i++)
-            {
+            {   
                 AddPokeballWithCharmander();
             }
         }
