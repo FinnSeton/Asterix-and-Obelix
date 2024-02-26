@@ -27,7 +27,7 @@ namespace PokemonGame
             {
                 throw new InvalidOperationException("The belt can only hold six pokeballs.");
             }
-            Pokemon charmander = new Pokemon("charmander", "Charmander", "Fire", "Water");
+            Pokemon charmander = new charmander("charmander", "Fire", "Water");
             Pokeball pokeball = new Pokeball(30, "red", charmander, false);
             belt.Add(pokeball);
         }
