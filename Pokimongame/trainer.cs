@@ -27,7 +27,7 @@ namespace PokemonGame
             {
                 throw new InvalidOperationException("The belt can only hold six pokeballs.");
             }
-            Pokemon charmander = new charmander("charmander", "Fire", "Water");
+            Pokemon charmander = new charmander("charmander", "flamey", "Fire", "Water");
             Pokeball pokeball = new Pokeball(30, "red", charmander, false);
             belt.Add(pokeball);
         }
@@ -43,6 +43,7 @@ namespace PokemonGame
             Pokeball pokeball = belt[0]; // Get the first pokeball
             belt.RemoveAt(0); // Remove the pokeball from the belt
             pokeball.Throwpokeball(); // Throw the pokeball
+            Pokemon.BattleCry(); // Pokemon does its battle cry
         }
 
         // Method to return a pokemon back to its pokeball and put the pokeball back on the belt
@@ -54,7 +55,7 @@ namespace PokemonGame
             }
             Pokeball pokeball = new Pokeball(30, "red", pokemon, false);
             belt.Add(pokeball); // Add the pokeball back to the belt
-            Console.WriteLine($"{pokemon.GetName()} returned to its pokeball and put back on the belt.");
+            Console.WriteLine($"{pokemon.nickname} returned to its pokeball and put back on the belt.");
         }
 
         // Getter for name
