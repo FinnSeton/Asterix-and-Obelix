@@ -14,9 +14,11 @@ namespace PokemonGame
             this.name = name;
             this.belt = new List<Pokeball>();
             // Add six pokeballs with Charmander to the belt
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 2; i++)
             {   
                 AddPokeballWithCharmander();
+                AddPokeballWithBulbasaur();
+                AddPokeballWithSquirtle();
             }
         }
 
@@ -31,6 +33,26 @@ namespace PokemonGame
             Pokeball pokeball = new Pokeball(30, "red", charmander, false);
             belt.Add(pokeball);
         }
+        private void AddPokeballWithBulbasaur()
+        {
+            if (belt.Count >= 6)
+            {
+                throw new InvalidOperationException("The belt can only hold six pokeballs.");
+            }
+            Pokemon bulbasaur = new bulbasaur("bulbasaur", "wiet", "Grass", "Fire");
+            Pokeball pokeball = new Pokeball(30, "green", bulbasaur, false);
+            belt.Add(pokeball);
+        }
+        private void AddPokeballWithSquirtle()
+        {
+            if (belt.Count >= 6)
+            {
+                throw new InvalidOperationException("The belt can only hold six pokeballs.");
+            }
+            Pokemon squirtle = new squirtle("squirtle", "pissboy", "water", "grass");
+            Pokeball pokeball = new Pokeball(30, "blue", squirtle, false);
+            belt.Add(pokeball);
+        }
 
         // Method to throw a pokeball from the belt
         public void ThrowPokeball()
@@ -43,7 +65,7 @@ namespace PokemonGame
             Pokeball pokeball = belt[0]; // Get the first pokeball
             belt.RemoveAt(0); // Remove the pokeball from the belt
             pokeball.Throwpokeball(); // Throw the pokeball
-            Pokemon.BattleCry(); // Pokemon does its battle cry
+            // charmander.BattleCry(); // Pokemon does its battle cry
         }
 
         // Method to return a pokemon back to its pokeball and put the pokeball back on the belt

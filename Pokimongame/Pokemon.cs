@@ -30,7 +30,7 @@ class charmander : Pokemon
 
     public override void BattleCry()
     {
-        Console.WriteLine($"{nickname}: {name}!");
+        Console.WriteLine($"{nickname}: charmander!");
     }
 }
 class bulbasaur : Pokemon
@@ -45,7 +45,7 @@ class bulbasaur : Pokemon
     }
     public override void BattleCry()
     {
-        Console.WriteLine($"{nickname}: {name}!");
+        Console.WriteLine($"{nickname}: bulbasaur!");
     }
 }
 class squirtle : Pokemon
@@ -60,6 +60,6 @@ class squirtle : Pokemon
     }
     public override void BattleCry()
     {
-        Console.WriteLine($"{nickname}: {name}!");
+        Console.WriteLine($"{nickname}: squitle!");
     }
 }
