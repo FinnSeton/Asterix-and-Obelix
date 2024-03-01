@@ -54,6 +54,7 @@ namespace PokemonGame
             belt.Add(pokeball);
         }
 
+
         // Method to throw a pokeball from the belt
         public void ThrowPokeball()
         {
@@ -61,6 +62,7 @@ namespace PokemonGame
             {
                 Console.WriteLine("No pokeballs left in the belt.");
                 return;
+               
             }
             Pokeball pokeball = belt[0]; // Get the first pokeball
             belt.RemoveAt(0); // Remove the pokeball from the belt

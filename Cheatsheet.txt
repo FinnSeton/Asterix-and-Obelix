@@ -14,4 +14,13 @@ Composition is used in object-oriented programming to promote code reuse, modula
 
 In code, composition is achieved by creating classes that contain instances of other classes as attributes. These instances represent the constituent parts or behaviors needed for the functionality of the containing class. By instantiating and utilizing these parts within the containing class, we achieve composition and build complex objects.
 
+Inheritance is a fundamental concept in object-oriented programming (OOP) where a class (referred to as the subclass or derived class) can inherit attributes and methods from another class (known as the superclass or base class). Inheritance allows a subclass to reuse code from its superclass, thereby promoting code reusability and modularity.
+
+We use inheritance in programming to promote code reuse, reduce redundancy, and establish a hierarchical relationship between classes. By inheriting attributes and methods from a superclass, subclasses can extend and specialize the behavior of the superclass while maintaining common functionality. This simplifies the design and maintenance of software systems, leading to more efficient development and easier maintenance.
+
+In code, inheritance is implemented by defining classes that inherit from other classes using the syntax provided by the programming language. Typically, a subclass is declared by specifying its superclass as part of its declaration. Subclasses can then access the attributes and methods of the superclass, either as they are or by overriding them to provide specialized behavior. Additionally, subclasses can define their own unique attributes and methods specific to their requirements, further enhancing the flexibility and extensibility of the codebase.
+
+
+
+
 
