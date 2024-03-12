@@ -1,3 +1,5 @@
+using PokemonGame;
+
 public abstract class Pokemon
 {
     // Fields for Pokemon's nickname, strength, and weakness
@@ -12,6 +14,8 @@ public abstract class Pokemon
         this.nickname = nickname;
         this.strength = strength;
         this.weakness = weakness;
+        Pokedex pokedex = new Pokedex();z
+        Pokedex.UpdateTrueAmountPokemon();
     }
     
     // Method for Pokemon to perform its battle cry
