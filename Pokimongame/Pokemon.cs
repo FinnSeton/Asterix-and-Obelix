@@ -14,7 +14,7 @@ public abstract class Pokemon
         this.nickname = nickname;
         this.strength = strength;
         this.weakness = weakness;
-        Pokedex pokedex = new Pokedex();z
+        Pokedex pokedex = new Pokedex();
         Pokedex.UpdateTrueAmountPokemon();
     }
     

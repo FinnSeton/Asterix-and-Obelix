@@ -8,30 +8,10 @@ namespace PokemonGame
         {
             // Create a trainer
             Trainer ash = new Trainer("Ash");
-
+            Trainer garry = new Trainer("garry");
             // Game loop
-            while (true)
-            {
-                Console.WriteLine("1. Throw Pokeball");
-                Console.WriteLine("2. Quit");
-                Console.Write("Choose an option: ");
-                string choice = Console.ReadLine();
-
-                switch (choice)
-                {
-                    case "1":
-                        // Throw a pokeball
-                        ash.ThrowPokeball();
-                        break;
-                    case "2":
-                        // Quit the game
-                        Console.WriteLine("Exiting the game.");
-                        return;
-                    default:
-                        Console.WriteLine("Invalid option. Please choose again.");
-                        break;
-                }
-            }
+            Battle.doBattle( ash, garry);
+            
         }
     }
 }
