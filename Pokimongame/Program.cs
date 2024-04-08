@@ -1,6 +1,8 @@
 ﻿using System;
+using PokemonGame;
 
 namespace PokemonGame
+
 {
     class Program
     {
@@ -9,9 +11,11 @@ namespace PokemonGame
             // Create a trainer
             Trainer ash = new Trainer("Ash");
             Trainer garry = new Trainer("garry");
+            garry.ShuffleBelt();
             // Game loop
-            Battle.doBattle( ash, garry);
-            
+            Arena arena = new Arena(ash, garry);
+            arena.doBattle();
+            Console.WriteLine( arena.checkwinner());
         }
     }
 }

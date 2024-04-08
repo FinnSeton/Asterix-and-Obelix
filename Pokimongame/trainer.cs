@@ -56,16 +56,17 @@ namespace PokemonGame
 
 
         // Method to throw a pokeball from the belt
-        public void ThrowPokeball()
+        public Pokeball ThrowPokeball()
         {
             if (belt.Count == 0)
             {
                 Console.WriteLine("No pokeballs left in the belt.");
-                return;
-               
+                throw new IndexOutOfRangeException("to implement");
+
             }
             Pokeball pokeball = belt[0]; // Get the first pokeball
             belt.RemoveAt(0); // Remove the pokeball from the belt
+            return pokeball;
             pokeball.Throwpokeball(); // Throw the pokeball
             // charmander.BattleCry(); // Pokemon does its battle cry
         }
@@ -92,6 +93,20 @@ namespace PokemonGame
         public List<Pokeball> GetBelt()
         {
             return belt;
+        }
+
+        public void ShuffleBelt()
+        {
+            Random rng = new Random();
+            int n = this.belt.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = rng.Next(n + 1);
+                Pokeball value = this.belt[k];
+                this.belt[k] = this.belt[n];
+                this.belt[n] = value;
+            }
         }
     }
 }
