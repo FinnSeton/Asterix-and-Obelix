@@ -3,17 +3,17 @@ using PokemonGame;
 public abstract class Pokemon
 {
     // Fields for Pokemon's nickname, strength, and weakness
-    public string name { get; set; }
-    public string nickname{ get; set; }
-    public string strength{ get; set; }
-    public string weakness{ get; set; }
+    public string Name { get; set; }
+    public string Nickname{ get; set; }
+    public string Strength{ get; set; }
+    public string Weakness{ get; set; }
     
     public Pokemon(string name, string nickname, string strength, string weakness)
     {
-        this.name = name;
-        this.nickname = nickname;
-        this.strength = strength;
-        this.weakness = weakness;
+        this.Name = name;
+        this.Nickname = nickname;
+        this.Strength = strength;
+        this.Weakness = weakness;
         Pokedex pokedex = new Pokedex();
         Pokedex.UpdateTrueAmountPokemon();
     }
@@ -21,49 +21,49 @@ public abstract class Pokemon
     // Method for Pokemon to perform its battle cry
     public abstract void BattleCry();
 }
-class charmander : Pokemon
+class Charmander : Pokemon
 {
     // Constructor for charmander class to initialize its fields
-    public charmander(string name, string nickname, string strength, string weakness) : base(name,nickname,strength,weakness)
+    public Charmander(string name, string nickname, string strength, string weakness) : base(name,nickname,strength,weakness)
     {
-        this.name = "charmander";
-        this.nickname = nickname;
-        this.strength = "fire";
-        this.weakness = "water";
+        this.Name = "charmander";
+        this.Nickname = nickname;
+        this.Strength = "fire";
+        this.Weakness = "water";
     }
 
     public override void BattleCry()
     {
-        Console.WriteLine($"{nickname}: charmander!");
+        Program.slowWrite($"{Nickname}: charmander!");
     }
 }
-class bulbasaur : Pokemon
+class Bulbasaur : Pokemon
 {
     // Constructor for bulbasaur class to initialize its fields
-    public bulbasaur(string name, string nickname, string strength, string weakness) : base(name,nickname,strength,weakness)
+    public Bulbasaur(string name, string nickname, string strength, string weakness) : base(name,nickname,strength,weakness)
     {
-        this.name = "bulbasaur";
-        this.nickname = nickname;
-        this.strength = "grass";
-        this.weakness = "fire";
+        this.Name = "bulbasaur";
+        this.Nickname = nickname;
+        this.Strength = "grass";
+        this.Weakness = "fire";
     }
     public override void BattleCry()
     {
-        Console.WriteLine($"{nickname}: bulbasaur!");
+        Program.slowWrite($"{Nickname}: bulbasaur!");
     }
 }
-class squirtle : Pokemon
+class Squirtle : Pokemon
 {
     // Constructor for Squirtle  class to initialize its fields
-    public squirtle (string name, string nickname, string strength, string weakness) : base(name,nickname,strength,weakness)
+    public Squirtle (string name, string nickname, string strength, string weakness) : base(name,nickname,strength,weakness)
     {
-        this.name = "Squirtle";
-        this.nickname = nickname;
-        this.strength = "water";
-        this.weakness = "grass";
+        this.Name = "Squirtle";
+        this.Nickname = nickname;
+        this.Strength = "water";
+        this.Weakness = "grass";
     }
-    public override void BattleCry()
+    public  override void BattleCry()
     {
-        Console.WriteLine($"{nickname}: squitle!");
+        Program.slowWrite($"{Nickname}: squitle!");
     }
 }

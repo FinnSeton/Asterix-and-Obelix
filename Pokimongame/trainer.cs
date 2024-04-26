@@ -5,14 +5,14 @@ namespace PokemonGame
 {
     public class Trainer
     {
-        public string name;
-        public List<Pokeball> belt;
+        public string Name;
+        public List<Pokeball> Belt;
 
         // Constructor
         public Trainer(string name)
         {
-            this.name = name;
-            this.belt = new List<Pokeball>();
+            this.Name = name;
+            this.Belt = new List<Pokeball>();
             // Add six pokeballs with Charmander to the belt
             for (int i = 0; i < 2; i++)
             {   
@@ -25,87 +25,89 @@ namespace PokemonGame
         // Method to add a Pokeball with Charmander to the belt
         private void AddPokeballWithCharmander()
         {
-            if (belt.Count >= 6)
+            if (Belt.Count >= 6)
             {
                 throw new InvalidOperationException("The belt can only hold six pokeballs.");
             }
-            Pokemon charmander = new charmander("charmander", "flamey", "Fire", "Water");
+            Pokemon charmander = new Charmander("charmander", "flamey", "Fire", "Water");
             Pokeball pokeball = new Pokeball(30, "red", charmander, false);
-            belt.Add(pokeball);
+            Belt.Add(pokeball);
         }
         private void AddPokeballWithBulbasaur()
         {
-            if (belt.Count >= 6)
+            if (Belt.Count >= 6)
             {
                 throw new InvalidOperationException("The belt can only hold six pokeballs.");
             }
-            Pokemon bulbasaur = new bulbasaur("bulbasaur", "wiet", "Grass", "Fire");
+            Pokemon bulbasaur = new Bulbasaur("bulbasaur", "wiet", "Grass", "Fire");
             Pokeball pokeball = new Pokeball(30, "green", bulbasaur, false);
-            belt.Add(pokeball);
+            Belt.Add(pokeball);
         }
         private void AddPokeballWithSquirtle()
         {
-            if (belt.Count >= 6)
+            if (Belt.Count >= 6)
             {
                 throw new InvalidOperationException("The belt can only hold six pokeballs.");
             }
-            Pokemon squirtle = new squirtle("squirtle", "pissboy", "water", "grass");
+            Pokemon squirtle = new Squirtle("squirtle", "pissboy", "water", "grass");
             Pokeball pokeball = new Pokeball(30, "blue", squirtle, false);
-            belt.Add(pokeball);
+            Belt.Add(pokeball);
         }
 
 
         // Method to throw a pokeball from the belt
         public Pokeball ThrowPokeball()
         {
-            if (belt.Count == 0)
+            if (Belt.Count == 0)
             {
-                Console.WriteLine("No pokeballs left in the belt.");
+                Program.slowWrite("No pokeballs left in the belt.");
                 throw new IndexOutOfRangeException("to implement");
 
             }
-            Pokeball pokeball = belt[0]; // Get the first pokeball
-            belt.RemoveAt(0); // Remove the pokeball from the belt
-            return pokeball;
+            Pokeball pokeball = Belt[0]; // Get the first pokeball
+            Belt.RemoveAt(0); // Remove the pokeball from the belt
             pokeball.Throwpokeball(); // Throw the pokeball
-            // charmander.BattleCry(); // Pokemon does its battle cry
+            Program.slowWrite(" ");
+            pokeball.Pokemon.BattleCry(); // Pokemon does its battle cry
+            Program.slowWrite(" ");
+            return pokeball;
         }
 
         // Method to return a pokemon back to its pokeball and put the pokeball back on the belt
         public void ReturnPokemon(Pokemon pokemon)
         {
-            if (belt.Count >= 6)
+            if (Belt.Count >= 6)
             {
                 throw new InvalidOperationException("The belt can only hold six pokeballs.");
             }
             Pokeball pokeball = new Pokeball(30, "red", pokemon, false);
-            belt.Add(pokeball); // Add the pokeball back to the belt
-            Console.WriteLine($"{pokemon.nickname} returned to its pokeball and put back on the belt.");
+            Belt.Add(pokeball); // Add the pokeball back to the belt
+            Program.slowWrite($"{pokemon.Nickname} returned to its pokeball and put back on the belt.");
         }
 
         // Getter for name
         public string GetName()
         {
-            return name;
+            return Name;
         }
 
         // Getter for belt
         public List<Pokeball> GetBelt()
         {
-            return belt;
+            return Belt;
         }
 
         public void ShuffleBelt()
         {
             Random rng = new Random();
-            int n = this.belt.Count;
+            int n = this.Belt.Count;
             while (n > 1)
             {
                 n--;
                 int k = rng.Next(n + 1);
-                Pokeball value = this.belt[k];
-                this.belt[k] = this.belt[n];
-                this.belt[n] = value;
+                Pokeball value = this.Belt[k];
+                this.Belt[k] = this.Belt[n];
+                this.Belt[n] = value;
             }
         }
     }

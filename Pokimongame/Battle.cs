@@ -2,22 +2,22 @@ namespace PokemonGame;
 
 public class Battle
 {
-    public Rounds round;
+    public Rounds Round;
 
 
     public Battle()
     {
-        this.round = new Rounds();
+        this.Round = new Rounds();
     }
     
 // Game loop
-    public int  doRounds()
+    public int  DoRounds()
     {
-        if (round.Pokemon1.strength == round.Pokemon2.weakness)
+        if (Round.Pokemon1.Strength == Round.Pokemon2.Weakness)
         {
             return 1;
         }
-        else if (round.Pokemon2.strength == round.Pokemon1.weakness)
+        else if (Round.Pokemon2.Strength == Round.Pokemon1.Weakness)
         {
             return 2;
         }
@@ -28,9 +28,9 @@ public class Battle
         
     }
 
-    public void setupRound(Pokemon pokemon1, Pokemon pokemon2)
+    public void SetupRound(Pokemon pokemon1, Pokemon pokemon2)
     {
-        round.Pokemon1 = pokemon1;
-        round.Pokemon2 = pokemon2;
+        Round.Pokemon1 = pokemon1;
+        Round.Pokemon2 = pokemon2;
     }
 }

@@ -4,53 +4,85 @@ public class Arena
 {
     public Trainer Trainer1;
     public Trainer Trainer2;
-    
-    public int wins_trainer1;
-    public int loses_trainer1;
-    public int wins_trainer2;
-    public int loses_trainer2;
-    public int rounds;
-    public Battle battle;
+
+    public int WinsTrainer1;
+    public int LosesTrainer1;
+    public int WinsTrainer2;
+    public int LosesTrainer2;
+    public int Rounds;
+    public Battle Battle;
 
     public Arena(Trainer trainer1, Trainer trainer2)
     {
         this.Trainer1 = trainer1;
         this.Trainer2 = trainer2;
-        
     }
 
-    public void doBattle()
+    public void DoBattle()
     {
-        this.battle = new Battle();
+        Program.slowWrite($"Trainer {Trainer1.GetName()} enterd the arena");
+        Program.slowWrite(" ");
+        Program.slowWrite($"Trainer {Trainer2.GetName()} Enterd the arena");
+        Program.slowWrite(" ");
+        Pokemon pokemonTrainer1 = Trainer1.ThrowPokeball().Pokemon;
+        Pokemon pokemonTrainer2 = Trainer2.ThrowPokeball().Pokemon;
+        Trainer lastLoser = null;
+
+        this.Battle = new Battle();
+
         for (int i = 0; i < 6; i++)
         {
-            
-            battle.setupRound(Trainer1.ThrowPokeball().pokemon, Trainer2.ThrowPokeball().pokemon);
-            int result = battle.doRounds();
+            Battle.SetupRound(pokemonTrainer1, pokemonTrainer2);
+            int result = Battle.DoRounds();
 
             if (result == 1)
             {
-                wins_trainer1++;
-                loses_trainer2++;
+                lastLoser = Trainer2;
+                WinsTrainer1++;
+                LosesTrainer2++;
+                pokemonTrainer2 = Trainer2.ThrowPokeball().Pokemon;
+                Program.slowWrite($"{Trainer1.GetName()} has won this round!");
+                Program.slowWrite(" ");
             }
             else if (result == 2)
             {
-                wins_trainer2++;
-                loses_trainer1++;
+                lastLoser = Trainer1;
+                pokemonTrainer1 = Trainer1.ThrowPokeball().Pokemon;
+                WinsTrainer2++;
+                LosesTrainer1++;
+                Program.slowWrite($"{Trainer2.GetName()} has won this round ");
+                Program.slowWrite($" ");
+            }
+            else
+            {
+                Program.slowWrite(" Its a draw nobody gets a point ");
+
+                if (lastLoser == Trainer1)
+                {
+                    pokemonTrainer2 =Trainer2.ThrowPokeball().Pokemon;
+                }
+                else if (lastLoser == Trainer2)
+                {
+                    pokemonTrainer1 = Trainer1.ThrowPokeball().Pokemon;
+                }
             }
 
-            rounds++;
+            Program.slowWrite($"{Trainer1.GetName()} has won {WinsTrainer1} times");
+            Program.slowWrite($" ");
+
+            Program.slowWrite($"{Trainer2.GetName()} has won {WinsTrainer2} times");
+            Program.slowWrite($" ");
+            Rounds++;
         }
     }
 
-    public string checkwinner()
+    public string Checkwinner()
     {
-        
-        if (wins_trainer1 > wins_trainer2)
+        if (WinsTrainer1 > WinsTrainer2)
         {
             return "Conrats you have won do you wanna play again?";
         }
-        else if (wins_trainer2 > wins_trainer1)
+        else if (WinsTrainer2 > WinsTrainer1)
         {
             return "you have lost. do you wanna play again?";
         }
@@ -59,7 +91,4 @@ public class Arena
             return "its a draw. do you wanna play again?";
         }
     }
-    
-    
-
 }

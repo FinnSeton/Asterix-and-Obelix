@@ -9,7 +9,7 @@ public class Pokedex
         
     }
 
-    public static int getTrueAmountPokemon()
+    public static int GetTrueAmountPokemon()
     {
         return TrueAmountPokemon;
     }

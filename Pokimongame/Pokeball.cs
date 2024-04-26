@@ -3,69 +3,69 @@ namespace PokemonGame;
 
     public class Pokeball
 {
-    public int catchrate;
-    public string color;
-    public Pokemon? pokemon;
-    public bool isopen;
+    public int Catchrate;
+    public string Color;
+    public Pokemon? Pokemon;
+    public bool Isopen;
 
     //consructor for the pokeball
     public Pokeball(int catchrate, string color, Pokemon pokemon, bool isopen)
     {
-        this.catchrate = catchrate;
-        this.color = color;
-        this.pokemon = pokemon;
-        this.isopen = false;
+        this.Catchrate = catchrate;
+        this.Color = color;
+        this.Pokemon = pokemon;
+        this.Isopen = false;
     }
     
     //setter for pokemon
     public void SetPokemon(Pokemon newPokemon)
     {
-        pokemon = newPokemon;
+        Pokemon = newPokemon;
     }
     
     //getter for pokemon
     public Pokemon GetPokemon()
     {
-        return pokemon;
+        return Pokemon;
     }
     
     //setter for catchrate
-    public void setCatchrate(int newCatchRate)
+    public void SetCatchrate(int newCatchRate)
     {
-        catchrate = newCatchRate;
+        Catchrate = newCatchRate;
     }
     
     //getter for catchrate
     public int GetCatchrate()
     {
-        return catchrate;
+        return Catchrate;
     }
     
     //setter for color
-    public void setColor(string newColor)
+    public void SetColor(string newColor)
     {
-        color = newColor;
+        Color = newColor;
     }
     
     //getter for color
     public string GetColor()
     {
-        return color;
+        return Color;
     }
     
     //method for pokeball being thrown
 
     public void Throwpokeball()
     {
-        this.isopen = true;
-        Console.WriteLine($"{pokemon.nickname}! i choose you!");
+        this.Isopen = true; 
+        Program.slowWrite($"{Pokemon.Nickname}! i choose you!");
     }
     
     //method for pokeball being returned
     public void Returnpokeball()
     {
-        this.isopen = false;
-        Console.WriteLine($"{pokemon.nickname}! come back!");
+        this.Isopen = false;
+        Program.slowWrite($"{Pokemon.Nickname}! come back!");
     }
     
 }
