@@ -9,7 +9,7 @@ namespace PokemonGame
         public static void slowWrite(string writeline)
         {
             Console.WriteLine(writeline);
-            System.Threading.Thread.Sleep(5);
+            System.Threading.Thread.Sleep(0);
         }
         
         static void Main(string[] args)

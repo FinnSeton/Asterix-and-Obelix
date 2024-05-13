@@ -40,18 +40,21 @@ public class Arena
                 lastLoser = Trainer2;
                 WinsTrainer1++;
                 LosesTrainer2++;
-                pokemonTrainer2 = Trainer2.ThrowPokeball().Pokemon;
-                Program.slowWrite($"{Trainer1.GetName()} has won this round!");
+                Program.slowWrite($"{Trainer1.GetName()} has won this round!"); 
                 Program.slowWrite(" ");
+                Trainer2.ReturnPokemon(pokemonTrainer2);
+                pokemonTrainer2 = Trainer2.ThrowPokeball().Pokemon;
+
             }
             else if (result == 2)
             {
-                lastLoser = Trainer1;
-                pokemonTrainer1 = Trainer1.ThrowPokeball().Pokemon;
                 WinsTrainer2++;
                 LosesTrainer1++;
+                lastLoser = Trainer1;
                 Program.slowWrite($"{Trainer2.GetName()} has won this round ");
                 Program.slowWrite($" ");
+                Trainer1.ReturnPokemon(pokemonTrainer1);
+                pokemonTrainer1 = Trainer1.ThrowPokeball().Pokemon;
             }
             else
             {
@@ -59,10 +62,19 @@ public class Arena
 
                 if (lastLoser == Trainer1)
                 {
+                    Trainer2.ReturnPokemon(pokemonTrainer2);
                     pokemonTrainer2 =Trainer2.ThrowPokeball().Pokemon;
                 }
                 else if (lastLoser == Trainer2)
                 {
+                    Trainer1.ReturnPokemon(pokemonTrainer1);
+                    pokemonTrainer1 = Trainer1.ThrowPokeball().Pokemon;
+                }
+                else
+                {
+                    Trainer2.ReturnPokemon(pokemonTrainer2);
+                    Trainer1.ReturnPokemon(pokemonTrainer1);
+                    pokemonTrainer2 =Trainer2.ThrowPokeball().Pokemon;
                     pokemonTrainer1 = Trainer1.ThrowPokeball().Pokemon;
                 }
             }
