@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gebruiker\\OneDrive\\Documenten\\GitHub\\Asterix-and-Obelix\\Pokimongame\\PokimonGame.csproj": {}
+    "C:\\Users\\jdfie\\Documents\\GitHub\\Asterix-and-Obelix\\Pokimongame\\PokimonGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gebruiker\\OneDrive\\Documenten\\GitHub\\Asterix-and-Obelix\\Pokimongame\\PokimonGame.csproj": {
+    "C:\\Users\\jdfie\\Documents\\GitHub\\Asterix-and-Obelix\\Pokimongame\\PokimonGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gebruiker\\OneDrive\\Documenten\\GitHub\\Asterix-and-Obelix\\Pokimongame\\PokimonGame.csproj",
+        "projectUniqueName": "C:\\Users\\jdfie\\Documents\\GitHub\\Asterix-and-Obelix\\Pokimongame\\PokimonGame.csproj",
         "projectName": "PokimonGame",
-        "projectPath": "C:\\Users\\Gebruiker\\OneDrive\\Documenten\\GitHub\\Asterix-and-Obelix\\Pokimongame\\PokimonGame.csproj",
-        "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gebruiker\\OneDrive\\Documenten\\GitHub\\Asterix-and-Obelix\\Pokimongame\\obj\\",
+        "projectPath": "C:\\Users\\jdfie\\Documents\\GitHub\\Asterix-and-Obelix\\Pokimongame\\PokimonGame.csproj",
+        "packagesPath": "C:\\Users\\jdfie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jdfie\\Documents\\GitHub\\Asterix-and-Obelix\\Pokimongame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jdfie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
