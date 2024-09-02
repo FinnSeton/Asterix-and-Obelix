@@ -3,10 +3,10 @@ namespace PokemonGame;
 
     public class Pokeball
 {
-    public int Catchrate;
-    public string Color;
-    public Pokemon? Pokemon;
-    public bool Isopen;
+    public int Catchrate { get; set; }
+    public string Color { get; set; }
+    public Pokemon? Pokemon { get; set; }
+    public bool Isopen { get; set; }
 
     //consructor for the pokeball
     public Pokeball(int catchrate, string color, Pokemon pokemon, bool isopen)

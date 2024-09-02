@@ -2,15 +2,14 @@ namespace PokemonGame;
 
 public class Arena
 {
-    public Trainer Trainer1;
-    public Trainer Trainer2;
-
-    public int WinsTrainer1;
-    public int LosesTrainer1;
-    public int WinsTrainer2;
-    public int LosesTrainer2;
-    public int Rounds;
-    public Battle Battle;
+    public Trainer Trainer1 { get; set; }
+    public Trainer Trainer2 { get; set; }
+    public int WinsTrainer1 { get; set; }
+    public int LosesTrainer1 { get; set; }
+    public int WinsTrainer2 { get; set; }
+    public int LosesTrainer2 { get; set; }
+    public int Rounds { get; set; }
+    public Battle Battle { get; set; }
 
     public Arena(Trainer trainer1, Trainer trainer2)
     {
