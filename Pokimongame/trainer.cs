@@ -1,12 +1,14 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace PokemonGame
 {
     public class Trainer
     {
-        public string Name;
-        public List<Pokeball> Belt;
+        public string Name { get; set; }
+        public List<Pokeball> Belt { get; set; }
+        public int MaxBeltSize = 6;
 
         // Constructor
         public Trainer(string name)
@@ -25,7 +27,7 @@ namespace PokemonGame
         // Method to add a Pokeball with Charmander to the belt
         private void AddPokeballWithCharmander()
         {
-            if (Belt.Count >= 6)
+            if (Belt.Count >= MaxBeltSize)
             {
                 throw new InvalidOperationException("The belt can only hold six pokeballs.");
             }
@@ -37,7 +39,7 @@ namespace PokemonGame
 
         private void AddPokeballWithBulbasaur()
         {
-            if (Belt.Count >= 6)
+            if (Belt.Count >= MaxBeltSize)
             {
                 throw new InvalidOperationException("The belt can only hold six pokeballs.");
             }
@@ -49,7 +51,7 @@ namespace PokemonGame
 
         private void AddPokeballWithSquirtle()
         {
-            if (Belt.Count >= 6)
+            if (Belt.Count >= MaxBeltSize)
             {
                 throw new InvalidOperationException("The belt can only hold six pokeballs.");
             }

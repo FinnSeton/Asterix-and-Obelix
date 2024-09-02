@@ -8,6 +8,13 @@ public abstract class Pokemon
     public string Strength{ get; set; }
     public string Weakness{ get; set; }
     public  bool HasFainted { get; set; }
+
+    public enum PokemonType
+    {
+        Fire,
+        Grass,
+        Water
+    }
     
     public Pokemon(string name, string nickname, string strength, string weakness, bool HasFainted)
     {
@@ -20,7 +27,7 @@ public abstract class Pokemon
         Pokedex.UpdateTrueAmountPokemon();
     }
     
-    // Method for Pokemon to perform its battle cry
+    // Method for Pokémon to perform its battle cry
     public abstract void BattleCry();
 }
 class Charmander : Pokemon
@@ -30,8 +37,8 @@ class Charmander : Pokemon
     {
         this.Name = "charmander";
         this.Nickname = nickname;
-        this.Strength = "fire";
-        this.Weakness = "water";
+        this.Strength = PokemonType.Fire.ToString();
+        this.Weakness = PokemonType.Water.ToString();
         this.HasFainted = false;
     }
 
@@ -47,8 +54,8 @@ class Bulbasaur : Pokemon
     {
         this.Name = "bulbasaur";
         this.Nickname = nickname;
-        this.Strength = "grass";
-        this.Weakness = "fire";
+        this.Strength = PokemonType.Grass.ToString();
+        this.Weakness = PokemonType.Fire.ToString();
         this.HasFainted = false;
     }
     public override void BattleCry()
@@ -63,8 +70,8 @@ class Squirtle : Pokemon
     {
         this.Name = "Squirtle";
         this.Nickname = nickname;
-        this.Strength = "water";
-        this.Weakness = "grass";
+        this.Strength = PokemonType.Water.ToString();
+        this.Weakness = PokemonType.Grass.ToString();
         this.HasFainted = false;
     }
     public  override void BattleCry()
