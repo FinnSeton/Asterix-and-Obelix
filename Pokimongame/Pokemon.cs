@@ -3,20 +3,20 @@ using PokemonGame;
 public abstract class Pokemon
 {
     // Fields for Pokemon's nickname, strength, and weakness
-    public string Name { get; set; }
+    public string  Name { get; set; }
     public string Nickname{ get; set; }
     public string Strength{ get; set; }
     public string Weakness{ get; set; }
     public  bool HasFainted { get; set; }
 
-    public enum PokemonType
+    protected enum PokemonType
     {
         Fire,
         Grass,
         Water
     }
     
-    public Pokemon(string name, string nickname, string strength, string weakness, bool HasFainted)
+    protected Pokemon(string name, string nickname, string strength, string weakness, bool HasFainted)
     {
         this.Name = name;
         this.Nickname = nickname;
@@ -24,6 +24,7 @@ public abstract class Pokemon
         this.Weakness = weakness;
         this.HasFainted = HasFainted;
         Pokedex pokedex = new Pokedex();
+        Pokedex.UpdateTrueAmountPokemon();
         Pokedex.UpdateTrueAmountPokemon();
     }
     

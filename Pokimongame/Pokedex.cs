@@ -2,14 +2,9 @@ namespace PokemonGame;
 
 public class Pokedex
 {
-    public static int TrueAmountPokemon = 0;
-
-    public Pokedex()
-    {
-        
-    }
-
-    public static int GetTrueAmountPokemon()
+    private static int TrueAmountPokemon = 0;
+    
+    private static int GetTrueAmountPokemon()
     {
         return TrueAmountPokemon;
     }

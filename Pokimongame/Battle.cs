@@ -2,7 +2,7 @@ namespace PokemonGame;
 
 public class Battle
 {
-    public Rounds Round { get; set; }
+    private Rounds Round { get; set; }
 
 
     public Battle()

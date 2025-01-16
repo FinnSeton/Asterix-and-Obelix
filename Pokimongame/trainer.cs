@@ -6,9 +6,9 @@ namespace PokemonGame
 {
     public class Trainer
     {
-        public string Name { get; set; }
-        public List<Pokeball> Belt { get; set; }
-        public int MaxBeltSize = 6;
+        private string Name { get; set; }
+        private List<Pokeball> Belt { get; set; }
+        private int MaxBeltSize = 6;
 
         // Constructor
         public Trainer(string name)

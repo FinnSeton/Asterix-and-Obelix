@@ -3,10 +3,10 @@ namespace PokemonGame;
 
     public class Pokeball
 {
-    public int Catchrate { get; set; }
-    public string Color { get; set; }
+    private int Catchrate { get; set; }
+    private string Color { get; set; }
     public Pokemon? Pokemon { get; set; }
-    public bool Isopen { get; set; }
+    private bool Isopen { get; set; }
 
     //consructor for the pokeball
     public Pokeball(int catchrate, string color, Pokemon pokemon, bool isopen)
@@ -18,37 +18,37 @@ namespace PokemonGame;
     }
     
     //setter for pokemon
-    public void SetPokemon(Pokemon newPokemon)
+    private void SetPokemon(Pokemon newPokemon)
     {
         Pokemon = newPokemon;
     }
     
     //getter for pokemon
-    public Pokemon GetPokemon()
+    private Pokemon GetPokemon()
     {
         return Pokemon;
     }
     
     //setter for catchrate
-    public void SetCatchrate(int newCatchRate)
+    private void SetCatchrate(int newCatchRate)
     {
         Catchrate = newCatchRate;
     }
     
     //getter for catchrate
-    public int GetCatchrate()
+    private int GetCatchrate()
     {
         return Catchrate;
     }
     
     //setter for color
-    public void SetColor(string newColor)
+    private void SetColor(string newColor)
     {
         Color = newColor;
     }
     
     //getter for color
-    public string GetColor()
+    private string GetColor()
     {
         return Color;
     }
@@ -62,7 +62,7 @@ namespace PokemonGame;
     }
     
     //method for pokeball being returned
-    public void Returnpokeball()
+    private void Returnpokeball()
     {
         this.Isopen = false;
         Program.slowWrite($"{Pokemon.Nickname}! come back!");
