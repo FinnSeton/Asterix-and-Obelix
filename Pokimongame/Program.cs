@@ -23,6 +23,7 @@ namespace PokemonGame
             Arena arena = new Arena(ash, garry);
             arena.DoBattle();
             Program.slowWrite( arena.Checkwinner());
+            string PlayAgain = Console.ReadLine();
         }
     }
 }

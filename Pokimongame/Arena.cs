@@ -8,7 +8,9 @@ public class Arena
     private int LosesTrainer1 { get; set; }
     private int WinsTrainer2 { get; set; }
     private int LosesTrainer2 { get; set; }
-    private int Rounds { get; set; }
+    private static int Rounds { get; set; }
+    
+    private static int battles { get; set; }
     private Battle Battle { get; set; }
 
     public Arena(Trainer trainer1, Trainer trainer2)
@@ -17,6 +19,18 @@ public class Arena
         this.Trainer2 = trainer2;
     }
 
+
+    public static void AddToRounds()
+    {
+        Rounds++;
+    }
+
+    public static void AddToBattles()
+    {
+        battles++;
+    }
+    
+    
     public void DoBattle()
     {
         Program.slowWrite($"Trainer {Trainer1.GetName()} enterd the arena");
@@ -83,12 +97,13 @@ public class Arena
 
             Program.slowWrite($"{Trainer2.GetName()} has won {WinsTrainer2} times");
             Program.slowWrite($" ");
-            Rounds++;
         }
     }
 
     public string Checkwinner()
     {
+        Program.slowWrite(" Rounds played:" + Arena.Rounds);
+        
         if (WinsTrainer1 > WinsTrainer2)
         {
             return "Conrats you have won do you wanna play again?";

@@ -13,6 +13,7 @@ public class Battle
 // Game loop
     public int  DoRounds()
     {
+        Arena.AddToRounds();
         if (Round.Pokemon1.Strength == Round.Pokemon2.Weakness)
         {
             return 1;
