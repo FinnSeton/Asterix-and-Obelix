@@ -18,49 +18,42 @@ namespace PokemonGame
             // Add six pokeballs with Charmander to the belt
             for (int i = 0; i < 2; i++)
             {
-                AddPokeballWithCharmander();
-                AddPokeballWithBulbasaur();
-                AddPokeballWithSquirtle();
+                AddPokeballWithPokemon("charmander", "flamey", "Red");
+                AddPokeballWithPokemon("bulbasaur", "wiet", "green");
+                AddPokeballWithPokemon("squirtle", "waterboy", "Blue");
             }
         }
 
         // Method to add a Pokeball with Charmander to the belt
-        private void AddPokeballWithCharmander()
+        
+        
+        private void AddPokeballWithPokemon(string species, string nickname, string pokeballColor)
         {
             if (Belt.Count >= MaxBeltSize)
             {
                 throw new InvalidOperationException("The belt can only hold six pokeballs.");
             }
-
-            Pokemon charmander = new Charmander("charmander", "flamey", "Fire", "Water", false);
-            Pokeball pokeball = new Pokeball(30, "red", charmander, false);
-            Belt.Add(pokeball);
-        }
-
-        private void AddPokeballWithBulbasaur()
-        {
-            if (Belt.Count >= MaxBeltSize)
+    
+            (Pokemon.PokemonType type, Pokemon.PokemonType weakness) = species.ToLower() switch
             {
-                throw new InvalidOperationException("The belt can only hold six pokeballs.");
-            }
-
-            Pokemon bulbasaur = new Bulbasaur("bulbasaur", "wiet", "Grass", "Fire", false);
-            Pokeball pokeball = new Pokeball(30, "green", bulbasaur, false);
-            Belt.Add(pokeball);
-        }
-
-        private void AddPokeballWithSquirtle()
-        {
-            if (Belt.Count >= MaxBeltSize)
+                "charmander" => (Pokemon.PokemonType.Fire, Pokemon.PokemonType.Water),
+                "bulbasaur" => (Pokemon.PokemonType.Grass, Pokemon.PokemonType.Fire),
+                "squirtle" => (Pokemon.PokemonType.Water, Pokemon.PokemonType.Grass),
+                _ => throw new ArgumentException("Invalid Pokémon species.")
+            };
+    
+            Pokemon pokemon = species.ToLower() switch
             {
-                throw new InvalidOperationException("The belt can only hold six pokeballs.");
-            }
+                "charmander" => new Charmander(nickname, type, weakness),
+                "bulbasaur" => new Bulbasaur(nickname, type, weakness),
+                "squirtle" => new Squirtle(nickname, type, weakness),
 
-            Pokemon squirtle = new Squirtle("squirtle", "pissboy", "water", "grass", false);
-            Pokeball pokeball = new Pokeball(30, "blue", squirtle, false);
+                _ => throw new ArgumentException("Invalid Pokémon species.")
+            };
+    
+            Pokeball pokeball = new Pokeball(30, pokeballColor, pokemon, false);
             Belt.Add(pokeball);
         }
-
 
         // Method to throw a pokeball from the belt
         public Pokeball ThrowPokeball()

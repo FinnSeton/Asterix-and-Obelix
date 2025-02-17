@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="781b4671-0dff-4964-8d31-f01cd689cca3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Html&amp;&amp;Css/game1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html&amp;&amp;Css/game1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Html&amp;&amp;Css/game2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html&amp;&amp;Css/game2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Html&amp;&amp;Css/game3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html&amp;&amp;Css/game3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Html&amp;&amp;Css/gamepicker.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html&amp;&amp;Css/gamepicker.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Html&amp;&amp;Css/img/Placeholder.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Html&amp;&amp;Css/img/Placeholder.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Html&amp;&amp;Css/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html&amp;&amp;Css/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokimongame/Arena.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/Arena.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokimongame/Battle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/Battle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokimongame/Pokeball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/Pokeball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokimongame/Pokedex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/Pokedex.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokimongame/Pokemon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/Pokemon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokimongame/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokimongame/bin/Debug/net8.0/PokimonGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/bin/Debug/net8.0/PokimonGame.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokimongame/bin/Debug/net8.0/PokimonGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/bin/Debug/net8.0/PokimonGame.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokimongame/bin/Debug/net8.0/PokimonGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/bin/Debug/net8.0/PokimonGame.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/PokimonGame.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Pokimongame/obj/Debug/net8.0/apphost.exe" afterDir="false" />
@@ -51,6 +42,7 @@
   &quot;keyToString&quot;: {
     &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/jdfie/Documents/GitHub/Asterix-and-Obelix&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -64,7 +56,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
       </set>
     </attachedChunks>
   </component>
@@ -79,6 +71,8 @@
       <workItem from="1725270576042" duration="134000" />
       <workItem from="1725355892098" duration="1518000" />
       <workItem from="1725880597170" duration="601000" />
+      <workItem from="1738572176506" duration="1361000" />
+      <workItem from="1739265073145" duration="488000" />
     </task>
     <servers />
   </component>

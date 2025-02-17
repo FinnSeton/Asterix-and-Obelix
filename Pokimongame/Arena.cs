@@ -8,10 +8,15 @@ public class Arena
     private int LosesTrainer1 { get; set; }
     private int WinsTrainer2 { get; set; }
     private int LosesTrainer2 { get; set; }
-    private static int Rounds { get; set; }
+    public static int Rounds { get; set; }
     
-    private static int battles { get; set; }
+    public static int battles { get; set; }
     private Battle Battle { get; set; }
+
+    // public Rounds getrounds()
+    // {
+    //     return this.rounds;
+    // }
 
     public Arena(Trainer trainer1, Trainer trainer2)
     {
